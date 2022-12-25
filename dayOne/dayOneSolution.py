@@ -1,6 +1,6 @@
 # Reads data from Advent of Code 
-with open("dayOneInput.txt", "r") as day3:
-	lines = day3.readlines()
+with open("dayOneInput.txt", "r") as day1:
+	lines = day1.readlines()
 
 # Removes \n from data and also converts string into integers 
 values = []
@@ -31,7 +31,11 @@ def getTopThree(nums):
     nums.sort(reverse=True)
     return nums[0] + nums[1] + nums[2]
 
+# Part One
 print(getElfMax(calories))
+#Part Two 
 print(getTopThree(calories))
+
+
 
 
